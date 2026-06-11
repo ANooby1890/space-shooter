@@ -1,0 +1,131 @@
+[gd_scene format=3 uid="uid://dxon0mk8dgivo"]
+
+[ext_resource type="PackedScene" uid="uid://b3j5uduj58fx3" path="res://scenes/foreground.tscn" id="2_mx8sn"]
+[ext_resource type="Texture2D" uid="uid://tremf3ig7f1j" path="res://SpaceShooterRedux/Backgrounds/background1.png" id="2_ppgk2"]
+[ext_resource type="PackedScene" uid="uid://cqow47bch5ocs" path="res://scenes/player.tscn" id="2_w8frs"]
+[ext_resource type="PackedScene" uid="uid://bggpuh2olvcxx" path="res://scenes/background.tscn" id="3_mx8sn"]
+[ext_resource type="PackedScene" uid="uid://cxu2la4padurf" path="res://scenes/meteor.tscn" id="4_2r41h"]
+[ext_resource type="PackedScene" uid="uid://b06gabo1gajjr" path="res://scenes/camera_2d.tscn" id="4_mx8sn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2r41h"]
+size = Vector2(177, 2691)
+
+[node name="EarthLevel" type="Node2D" unique_id=871558593]
+
+[node name="Background" parent="." unique_id=1164919063 instance=ExtResource("3_mx8sn")]
+scroll_scale = Vector2(1, 0.3)
+repeat_size = Vector2(0, 896)
+repeat_times = 30
+
+[node name="Sprite2D" parent="Background" index="0" unique_id=210773978]
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("2_ppgk2")
+
+[node name="Foreground" parent="." unique_id=523679410 instance=ExtResource("2_mx8sn")]
+
+[node name="Meteor" parent="Foreground" index="0" unique_id=1389272604]
+position = Vector2(197, -851)
+
+[node name="Meteor10" parent="Foreground" unique_id=1521286142 instance=ExtResource("4_2r41h")]
+position = Vector2(288, -1387)
+
+[node name="Meteor11" parent="Foreground" unique_id=1198219501 instance=ExtResource("4_2r41h")]
+position = Vector2(11, -1345)
+
+[node name="Meteor12" parent="Foreground" unique_id=110400011 instance=ExtResource("4_2r41h")]
+position = Vector2(301, -1185)
+
+[node name="Meteor13" parent="Foreground" unique_id=1421842589 instance=ExtResource("4_2r41h")]
+position = Vector2(67, -1193)
+
+[node name="Meteor14" parent="Foreground" unique_id=1131410917 instance=ExtResource("4_2r41h")]
+position = Vector2(3, -1013)
+
+[node name="Meteor15" parent="Foreground" unique_id=2046328346 instance=ExtResource("4_2r41h")]
+position = Vector2(277, -999)
+
+[node name="Meteor16" parent="Foreground" unique_id=981034635 instance=ExtResource("4_2r41h")]
+position = Vector2(-196, -930)
+
+[node name="Meteor17" parent="Foreground" unique_id=56572936 instance=ExtResource("4_2r41h")]
+position = Vector2(-168, -1118)
+
+[node name="Meteor18" parent="Foreground" unique_id=408300129 instance=ExtResource("4_2r41h")]
+position = Vector2(470, -991)
+
+[node name="Meteor19" parent="Foreground" unique_id=720950059 instance=ExtResource("4_2r41h")]
+position = Vector2(-287, -2023)
+
+[node name="Meteor20" parent="Foreground" unique_id=1814549865 instance=ExtResource("4_2r41h")]
+position = Vector2(37, -1826)
+
+[node name="Meteor21" parent="Foreground" unique_id=1519163772 instance=ExtResource("4_2r41h")]
+position = Vector2(243, -1728)
+
+[node name="Meteor22" parent="Foreground" unique_id=440724892 instance=ExtResource("4_2r41h")]
+position = Vector2(-275, -1878)
+
+[node name="Meteor23" parent="Foreground" unique_id=1906465277 instance=ExtResource("4_2r41h")]
+position = Vector2(-55, -1556)
+
+[node name="Meteor24" parent="Foreground" unique_id=400367141 instance=ExtResource("4_2r41h")]
+position = Vector2(219, -1542)
+
+[node name="Meteor25" parent="Foreground" unique_id=1712027561 instance=ExtResource("4_2r41h")]
+position = Vector2(-254, -1473)
+
+[node name="Meteor26" parent="Foreground" unique_id=1573593567 instance=ExtResource("4_2r41h")]
+position = Vector2(-206, -1711)
+
+[node name="Meteor27" parent="Foreground" unique_id=141167214 instance=ExtResource("4_2r41h")]
+position = Vector2(412, -1534)
+
+[node name="Meteor28" parent="Foreground" unique_id=1030406135 instance=ExtResource("4_2r41h")]
+position = Vector2(321, -2466)
+
+[node name="Meteor29" parent="Foreground" unique_id=272666158 instance=ExtResource("4_2r41h")]
+position = Vector2(44, -2424)
+
+[node name="Meteor30" parent="Foreground" unique_id=598575931 instance=ExtResource("4_2r41h")]
+position = Vector2(276, -2252)
+
+[node name="Meteor31" parent="Foreground" unique_id=1440762917 instance=ExtResource("4_2r41h")]
+position = Vector2(287, -2081)
+
+[node name="Meteor32" parent="Foreground" unique_id=1314293396 instance=ExtResource("4_2r41h")]
+position = Vector2(114, -2058)
+
+[node name="Meteor33" parent="Foreground" unique_id=1358415999 instance=ExtResource("4_2r41h")]
+position = Vector2(-242, -2176)
+
+[node name="Meteor34" parent="Foreground" unique_id=1304192883 instance=ExtResource("4_2r41h")]
+position = Vector2(-42, -1987)
+
+[node name="Meteor35" parent="Foreground" unique_id=891656739 instance=ExtResource("4_2r41h")]
+position = Vector2(-17, -2190)
+
+[node name="Meteor36" parent="Foreground" unique_id=712220033 instance=ExtResource("4_2r41h")]
+position = Vector2(206, -1884)
+
+[node name="Player" parent="." unique_id=562159398 instance=ExtResource("2_w8frs")]
+
+[node name="Camera2D" parent="." unique_id=1170865184 node_paths=PackedStringArray("player") instance=ExtResource("4_mx8sn")]
+offset = Vector2(0, -360.045)
+player = NodePath("../Player")
+
+[node name="Borders" type="Node2D" parent="." unique_id=639548502]
+
+[node name="LeftBorder" type="StaticBody2D" parent="Borders" unique_id=856365432]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/LeftBorder" unique_id=1615585664]
+position = Vector2(-358.5, -1185.5)
+shape = SubResource("RectangleShape2D_2r41h")
+
+[node name="LeftBorder2" type="StaticBody2D" parent="Borders" unique_id=8497510]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/LeftBorder2" unique_id=1755091501]
+position = Vector2(359, -1209)
+shape = SubResource("RectangleShape2D_2r41h")
+
+[editable path="Background"]
+[editable path="Foreground"]

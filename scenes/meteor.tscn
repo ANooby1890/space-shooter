@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cxu2la4padurf"]
+
+[ext_resource type="Script" uid="uid://cs6rrldljlsr3" path="res://scenes/meteor.gd" id="1_pxso2"]
+[ext_resource type="Texture2D" uid="uid://brfa44caayfpq" path="res://SpaceShooterRedux/PNG/Meteors/meteor1.png" id="1_tcwo0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pxso2"]
+radius = 62.0
+height = 141.99998
+
+[node name="SolidMeteor" type="StaticBody2D" unique_id=1687464699]
+script = ExtResource("1_pxso2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=249990255]
+scale = Vector2(1.6938775, 1.5729166)
+texture = ExtResource("1_tcwo0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=216711758]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_pxso2")
