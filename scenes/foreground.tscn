@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://b3j5uduj58fx3"]
-
-[ext_resource type="PackedScene" uid="uid://cxu2la4padurf" path="res://scenes/meteor.tscn" id="1_2gfar"]
-[ext_resource type="Script" uid="uid://1yfg57s71yhe" path="res://scenes/foreground.gd" id="1_lqts8"]
-
-[node name="Foreground" type="Node2D" unique_id=6261842]
-script = ExtResource("1_lqts8")
-
-[node name="Meteor" parent="." unique_id=1389272604 instance=ExtResource("1_2gfar")]

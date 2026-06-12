@@ -1,5 +1,5 @@
 extends StaticBody2D
-class_name Crashable
+class_name Obstacle
 
 @export var rotation_speed := 90
 
@@ -10,4 +10,4 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	rotation_degrees += rotation_speed * 1 * delta
+	rotation_degrees += rotation_speed * delta
