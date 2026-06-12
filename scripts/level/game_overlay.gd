@@ -15,3 +15,9 @@ func game_paused():
 
 func _on_quit_button_pressed() -> void:
 		get_tree().change_scene_to_file("res://scenes/rooms/main_menu.tscn")
+
+
+func _on_retry_button_pressed() -> void:
+	get_node("../Player").dead = false
+	get_node("../Player").global_position = get_node("../Player").spawn_position
+	self.hide()

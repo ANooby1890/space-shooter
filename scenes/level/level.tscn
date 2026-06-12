@@ -117,6 +117,7 @@ offset_right = 896.0
 offset_bottom = 512.0
 text = "Quit"
 
+[connection signal="pressed" from="GameOverlay/RetryButton" to="GameOverlay" method="_on_retry_button_pressed"]
 [connection signal="pressed" from="GameOverlay/QuitButton" to="GameOverlay" method="_on_quit_button_pressed"]
 
 [editable path="Background"]

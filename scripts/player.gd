@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+@onready var spawn_position: Vector2 = global_position
 @export var speedY := 400
 @export var speedX := 300
 @export var godmode := false
