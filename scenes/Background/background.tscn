@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bggpuh2olvcxx"]
+
+[ext_resource type="Texture2D" uid="uid://tremf3ig7f1j" path="res://SpaceShooterSprites/Backgrounds/background1.png" id="1_aix3q"]
+
+[node name="Background" type="Parallax2D" unique_id=1164919063]
+repeat_times = 100
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=210773978]
+texture = ExtResource("1_aix3q")

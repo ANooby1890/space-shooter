@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cxu2la4padurf"]
 
-[ext_resource type="Script" uid="uid://cs6rrldljlsr3" path="res://scenes/Foreground/Obstacles/meteor.gd" id="1_pxso2"]
-[ext_resource type="Texture2D" uid="uid://brfa44caayfpq" path="res://SpaceShooterRedux/PNG/Meteors/meteor1.png" id="1_tcwo0"]
+[ext_resource type="Script" uid="uid://cs6rrldljlsr3" path="res://scripts/Foreground/Obstacles/meteor.gd" id="1_pxso2"]
+[ext_resource type="Texture2D" uid="uid://brfa44caayfpq" path="res://SpaceShooterSprites/PNG/Meteors/meteor1.png" id="1_tcwo0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pxso2"]
 radius = 276.0

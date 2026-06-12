@@ -1,5 +1,9 @@
-Node2D
+Label
 Button
+Panel
+CanvasLayer
+HBoxContainer
+Node2D
 VBoxContainer
 CenterContainer
 Control
@@ -8,7 +12,3 @@ ColorRect
 CheckBox
 TileMapLayer
 CollisionShape2D
-StaticBody2D
-RigidBody2D
-CollisionPolygon2D
-Camera2D

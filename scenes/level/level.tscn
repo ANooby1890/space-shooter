@@ -1,0 +1,123 @@
+[gd_scene format=3 uid="uid://dxon0mk8dgivo"]
+
+[ext_resource type="PackedScene" uid="uid://b3j5uduj58fx3" path="res://scenes/Foreground/layer.tscn" id="2_mx8sn"]
+[ext_resource type="PackedScene" uid="uid://cqow47bch5ocs" path="res://scenes/player.tscn" id="2_w8frs"]
+[ext_resource type="PackedScene" uid="uid://bggpuh2olvcxx" path="res://scenes/Background/background.tscn" id="3_mx8sn"]
+[ext_resource type="PackedScene" uid="uid://cxu2la4padurf" path="res://scenes/Foreground/Obstacles/meteor.tscn" id="4_2r41h"]
+[ext_resource type="PackedScene" uid="uid://b06gabo1gajjr" path="res://scenes/camera_2d.tscn" id="4_mx8sn"]
+[ext_resource type="Script" uid="uid://bwue2bnrp4hbv" path="res://scripts/level/game_overlay.gd" id="6_d4w6o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2r41h"]
+size = Vector2(177, 2691)
+
+[node name="Level" type="Node2D" unique_id=528998893]
+
+[node name="Background" parent="." unique_id=1164919063 instance=ExtResource("3_mx8sn")]
+scale = Vector2(2, 2)
+scroll_scale = Vector2(1, 0.3)
+repeat_size = Vector2(0, 720)
+repeat_times = 30
+
+[node name="Layer1" parent="." unique_id=523679410 instance=ExtResource("2_mx8sn")]
+
+[node name="SolidMeteor" parent="Layer1" unique_id=1687464699 instance=ExtResource("4_2r41h")]
+position = Vector2(112, -504)
+
+[node name="SolidMeteor2" parent="Layer1" unique_id=1880958968 instance=ExtResource("4_2r41h")]
+position = Vector2(-216, -440)
+scale = Vector2(0.4, 0.4)
+
+[node name="SolidMeteor3" parent="Layer1" unique_id=1086246007 instance=ExtResource("4_2r41h")]
+position = Vector2(80, -768)
+scale = Vector2(0.5, 0.5)
+
+[node name="SolidMeteor7" parent="Layer1" unique_id=949580984 instance=ExtResource("4_2r41h")]
+position = Vector2(-128, -1232)
+scale = Vector2(0.5, 0.5)
+
+[node name="SolidMeteor8" parent="Layer1" unique_id=1072547369 instance=ExtResource("4_2r41h")]
+position = Vector2(280, -1280)
+scale = Vector2(0.5, 0.5)
+
+[node name="SolidMeteor12" parent="Layer1" unique_id=439846078 instance=ExtResource("4_2r41h")]
+position = Vector2(407, -600)
+scale = Vector2(0.5, 0.5)
+
+[node name="SolidMeteor9" parent="Layer1" unique_id=686650540 instance=ExtResource("4_2r41h")]
+position = Vector2(-48, -1560)
+scale = Vector2(0.5, 0.5)
+
+[node name="SolidMeteor4" parent="Layer1" unique_id=1811022972 instance=ExtResource("4_2r41h")]
+position = Vector2(-368, -760)
+scale = Vector2(0.5, 0.5)
+
+[node name="SolidMeteor5" parent="Layer1" unique_id=619901444 instance=ExtResource("4_2r41h")]
+position = Vector2(-176, -960)
+
+[node name="SolidMeteor6" parent="Layer1" unique_id=1439860424 instance=ExtResource("4_2r41h")]
+position = Vector2(128, -1024)
+
+[node name="SolidMeteor10" parent="Layer1" unique_id=1099738064 instance=ExtResource("4_2r41h")]
+position = Vector2(288, -1544)
+
+[node name="SolidMeteor11" parent="Layer1" unique_id=692973020 instance=ExtResource("4_2r41h")]
+position = Vector2(-512, -520)
+
+[node name="Player" parent="." unique_id=562159398 instance=ExtResource("2_w8frs")]
+
+[node name="Camera2D" parent="." unique_id=1170865184 node_paths=PackedStringArray("player") instance=ExtResource("4_mx8sn")]
+offset = Vector2(0, -240)
+player = NodePath("../Player")
+
+[node name="Borders" type="Node2D" parent="." unique_id=639548502]
+
+[node name="LeftBorder" type="StaticBody2D" parent="Borders" unique_id=856365432]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/LeftBorder" unique_id=1615585664]
+position = Vector2(-704, -1281)
+shape = SubResource("RectangleShape2D_2r41h")
+
+[node name="LeftBorder2" type="StaticBody2D" parent="Borders" unique_id=8497510]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/LeftBorder2" unique_id=1755091501]
+position = Vector2(704, -1290)
+shape = SubResource("RectangleShape2D_2r41h")
+
+[node name="GameOverlay" type="CanvasLayer" parent="." unique_id=143451477]
+script = ExtResource("6_d4w6o")
+
+[node name="Label" type="Label" parent="GameOverlay" unique_id=110541778]
+offset_left = 320.0
+offset_top = 128.0
+offset_right = 960.0
+offset_bottom = 297.0
+theme_override_font_sizes/font_size = 60
+text = "Earth Level
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="GameOverlay" unique_id=1879529609]
+offset_left = 192.0
+offset_top = 64.0
+offset_right = 1088.0
+offset_bottom = 640.0
+
+[node name="RetryButton" type="Button" parent="GameOverlay" unique_id=1462641147]
+offset_left = 384.0
+offset_top = 384.0
+offset_right = 512.0
+offset_bottom = 512.0
+text = "Retry"
+
+[node name="QuitButton" type="Button" parent="GameOverlay" unique_id=1315681101]
+offset_left = 768.0
+offset_top = 384.0
+offset_right = 896.0
+offset_bottom = 512.0
+text = "Quit"
+
+[connection signal="pressed" from="GameOverlay/QuitButton" to="GameOverlay" method="_on_quit_button_pressed"]
+
+[editable path="Background"]
+[editable path="Layer1"]
