@@ -86,6 +86,12 @@ shape = SubResource("RectangleShape2D_2r41h")
 [node name="GameOverlay" type="CanvasLayer" parent="." unique_id=143451477]
 script = ExtResource("6_d4w6o")
 
+[node name="Panel" type="Panel" parent="GameOverlay" unique_id=1879529609]
+offset_left = 192.0
+offset_top = 64.0
+offset_right = 1088.0
+offset_bottom = 640.0
+
 [node name="Label" type="Label" parent="GameOverlay" unique_id=110541778]
 offset_left = 320.0
 offset_top = 128.0
@@ -96,12 +102,6 @@ text = "Earth Level
 "
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Panel" type="Panel" parent="GameOverlay" unique_id=1879529609]
-offset_left = 192.0
-offset_top = 64.0
-offset_right = 1088.0
-offset_bottom = 640.0
 
 [node name="RetryButton" type="Button" parent="GameOverlay" unique_id=1462641147]
 offset_left = 384.0
