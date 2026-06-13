@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brfa44caayfpq"
-path="res://.godot/imported/meteor1.png-dd153936931c1d933fb7b2c80fedff91.ctex"
+uid="uid://l3in0kbexlhb"
+path="res://.godot/imported/blackhole1body.png-9a6c66410d62641e5cb623dd4006bac9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpaceShooterSprites/PNG/Obstacles/meteor1.png"
-dest_files=["res://.godot/imported/meteor1.png-dd153936931c1d933fb7b2c80fedff91.ctex"]
+source_file="res://SpaceShooterSprites/PNG/Obstacles/Blackhole1/blackhole1body.png"
+dest_files=["res://.godot/imported/blackhole1body.png-9a6c66410d62641e5cb623dd4006bac9.ctex"]
 
 [params]
 

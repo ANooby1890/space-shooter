@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://cxu2la4padurf"]
 
 [ext_resource type="Script" uid="uid://cs6rrldljlsr3" path="res://scripts/Foreground/Obstacles/meteor.gd" id="1_pxso2"]
-[ext_resource type="Texture2D" uid="uid://brfa44caayfpq" path="res://SpaceShooterSprites/PNG/Obstacles/meteor1.png" id="1_tcwo0"]
+[ext_resource type="Texture2D" uid="uid://d5p0sd42cfci" path="res://SpaceShooterSprites/PNG/Obstacles/meteor1/meteor1body.png" id="2_rj673"]
+[ext_resource type="Texture2D" uid="uid://b24deiprspyaf" path="res://SpaceShooterSprites/PNG/Obstacles/meteor1/meteor1outline.png" id="3_23uhn"]
 
 [node name="SolidMeteor" type="StaticBody2D" unique_id=1687464699]
 scale = Vector2(0.25, 0.25)
@@ -9,7 +10,12 @@ script = ExtResource("1_pxso2")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=249990255]
 scale = Vector2(1.6938775, 1.5729166)
-texture = ExtResource("1_tcwo0")
+
+[node name="MeteorBody" type="Sprite2D" parent="Sprite2D" unique_id=400230385]
+texture = ExtResource("2_rj673")
+
+[node name="MeteorOutline" type="Sprite2D" parent="Sprite2D" unique_id=1822980412]
+texture = ExtResource("3_23uhn")
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="." unique_id=40307501]
 position = Vector2(3, 10)

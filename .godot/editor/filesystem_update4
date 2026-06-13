@@ -1,4 +1,6 @@
-res://scenes/player.tscn
-res://scenes/level/level.tscn
+res://scenes/Foreground/Obstacles/meteor.tscn
 res://scenes/Foreground/Obstacles/blackhole.tscn
-res://scripts/player.gd
+res://scenes/level/level.tscn
+res://scenes/rooms/main_menu.tscn
+res://scripts/camera_2d.gd
+res://scenes/camera_2d.tscn

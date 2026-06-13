@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://iss3d0cddvd2"]
 
 [ext_resource type="Script" uid="uid://dgwjjvf5qi2ki" path="res://scripts/Foreground/Obstacles/spinning_obstacle.gd" id="1_78ve5"]
-[ext_resource type="Texture2D" uid="uid://l3in0kbexlhb" path="res://SpaceShooterSprites/PNG/Obstacles/Blackhole1/blackhole1-1.png" id="2_wjxmx"]
-[ext_resource type="Texture2D" uid="uid://f6smfet20him" path="res://SpaceShooterSprites/PNG/Obstacles/Blackhole1/blackhole1-2.png" id="3_lottf"]
-[ext_resource type="Texture2D" uid="uid://c78mveajhcm8x" path="res://SpaceShooterSprites/PNG/Obstacles/Blackhole1/blackhole1-3.png" id="4_eg6bj"]
+[ext_resource type="Texture2D" uid="uid://l3in0kbexlhb" path="res://SpaceShooterSprites/PNG/Obstacles/Blackhole1/blackhole1body.png" id="2_wjxmx"]
+[ext_resource type="Texture2D" uid="uid://f6smfet20him" path="res://SpaceShooterSprites/PNG/Obstacles/Blackhole1/blackhole1spin.png" id="3_lottf"]
+[ext_resource type="Texture2D" uid="uid://c78mveajhcm8x" path="res://SpaceShooterSprites/PNG/Obstacles/Blackhole1/blackhole1back.png" id="4_eg6bj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_r8fna"]
 radius = 108.04166
