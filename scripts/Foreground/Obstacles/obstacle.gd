@@ -1,5 +1,6 @@
 # Saved as Obstacle.gd
-extends Obstacle
+extends StaticBody2D
+class_name Obstacle
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass

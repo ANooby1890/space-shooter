@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cqow47bch5ocs"]
 
 [ext_resource type="Script" uid="uid://w3q520kfcpfr" path="res://scripts/player.gd" id="1_req00"]
-[ext_resource type="Texture2D" uid="uid://b1f1fgeqx6l05" path="res://SpaceShooterSprites/PNG/ship1.png" id="2_g2els"]
+[ext_resource type="Texture2D" uid="uid://b43j155hl8f37" path="res://SpaceShooterSprites/PNG/Ships/ship1.png" id="2_g2els"]
 
 [node name="Player" type="CharacterBody2D" unique_id=1001688488]
 script = ExtResource("1_req00")

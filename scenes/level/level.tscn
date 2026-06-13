@@ -5,18 +5,20 @@
 [ext_resource type="PackedScene" uid="uid://bggpuh2olvcxx" path="res://scenes/Background/background.tscn" id="3_mx8sn"]
 [ext_resource type="PackedScene" uid="uid://cxu2la4padurf" path="res://scenes/Foreground/Obstacles/meteor.tscn" id="4_2r41h"]
 [ext_resource type="PackedScene" uid="uid://b06gabo1gajjr" path="res://scenes/camera_2d.tscn" id="4_mx8sn"]
+[ext_resource type="PackedScene" uid="uid://bjgevyjq3cifm" path="res://scenes/Foreground/Obstacles/block.tscn" id="4_xv074"]
+[ext_resource type="PackedScene" uid="uid://iss3d0cddvd2" path="res://scenes/Foreground/Obstacles/blackhole.tscn" id="5_sytrn"]
 [ext_resource type="Script" uid="uid://bwue2bnrp4hbv" path="res://scripts/level/game_overlay.gd" id="6_d4w6o"]
+[ext_resource type="Script" uid="uid://c8vfki1a1nm6c" path="res://scripts/level/borders.gd" id="6_wcngd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2r41h"]
-size = Vector2(177, 2691)
+size = Vector2(177, 1109.75)
 
 [node name="Level" type="Node2D" unique_id=528998893]
 
 [node name="Background" parent="." unique_id=1164919063 instance=ExtResource("3_mx8sn")]
-scale = Vector2(2, 2)
 scroll_scale = Vector2(1, 0.3)
-repeat_size = Vector2(0, 720)
-repeat_times = 30
+repeat_size = Vector2(1024, 1024)
+repeat_times = 50
 
 [node name="Layer1" parent="." unique_id=523679410 instance=ExtResource("2_mx8sn")]
 
@@ -43,8 +45,8 @@ scale = Vector2(0.5, 0.5)
 position = Vector2(407, -600)
 scale = Vector2(0.5, 0.5)
 
-[node name="SolidMeteor9" parent="Layer1" unique_id=686650540 instance=ExtResource("4_2r41h")]
-position = Vector2(-48, -1560)
+[node name="SolidMeteor13" parent="Layer1" unique_id=1712345591 instance=ExtResource("4_2r41h")]
+position = Vector2(584, -1640)
 scale = Vector2(0.5, 0.5)
 
 [node name="SolidMeteor4" parent="Layer1" unique_id=1811022972 instance=ExtResource("4_2r41h")]
@@ -63,6 +65,152 @@ position = Vector2(288, -1544)
 [node name="SolidMeteor11" parent="Layer1" unique_id=692973020 instance=ExtResource("4_2r41h")]
 position = Vector2(-512, -520)
 
+[node name="Layer2" parent="." unique_id=1436941233 instance=ExtResource("2_mx8sn")]
+modulate = Color(0.6974327, 0.99177355, 0.48374033, 1)
+
+[node name="block" parent="Layer2" unique_id=1672443626 instance=ExtResource("4_xv074")]
+position = Vector2(248, -400)
+
+[node name="block2" parent="Layer2" unique_id=1859074602 instance=ExtResource("4_xv074")]
+position = Vector2(-200, -624)
+
+[node name="block3" parent="Layer2" unique_id=434591871 instance=ExtResource("4_xv074")]
+position = Vector2(608, -736)
+
+[node name="block9" parent="Layer2" unique_id=491666217 instance=ExtResource("4_xv074")]
+position = Vector2(304, -888)
+
+[node name="block4" parent="Layer2" unique_id=538046585 instance=ExtResource("4_xv074")]
+position = Vector2(288, -1056)
+scale = Vector2(1.5, 1.5)
+
+[node name="block5" parent="Layer2" unique_id=1049325446 instance=ExtResource("4_xv074")]
+position = Vector2(-328, -1455.9999)
+scale = Vector2(2.2, 2.2)
+
+[node name="block6" parent="Layer2" unique_id=1014296275 instance=ExtResource("4_xv074")]
+position = Vector2(-352, -1056)
+scale = Vector2(2, 2)
+
+[node name="block7" parent="Layer2" unique_id=1221938950 instance=ExtResource("4_xv074")]
+position = Vector2(-664, -904)
+scale = Vector2(3, 3)
+
+[node name="block8" parent="Layer2" unique_id=1647949255 instance=ExtResource("4_xv074")]
+position = Vector2(480, -928)
+scale = Vector2(2, 2)
+
+[node name="block10" parent="Layer2" unique_id=221364441 instance=ExtResource("4_xv074")]
+position = Vector2(-480, -304)
+scale = Vector2(2.5, 2.5)
+
+[node name="Layer3" parent="." unique_id=1840402187 instance=ExtResource("2_mx8sn")]
+position = Vector2(160, -1440)
+
+[node name="SolidMeteor" parent="Layer3" unique_id=800965306 instance=ExtResource("4_2r41h")]
+position = Vector2(112, -504)
+
+[node name="SolidMeteor2" parent="Layer3" unique_id=183353453 instance=ExtResource("4_2r41h")]
+position = Vector2(-216, -440)
+scale = Vector2(0.4, 0.4)
+
+[node name="SolidMeteor3" parent="Layer3" unique_id=1069982181 instance=ExtResource("4_2r41h")]
+position = Vector2(80, -768)
+scale = Vector2(0.5, 0.5)
+
+[node name="SolidMeteor7" parent="Layer3" unique_id=992089320 instance=ExtResource("4_2r41h")]
+position = Vector2(-152, -1232)
+scale = Vector2(0.5, 0.5)
+
+[node name="SolidMeteor8" parent="Layer3" unique_id=94465270 instance=ExtResource("4_2r41h")]
+position = Vector2(280, -1280)
+scale = Vector2(0.5, 0.5)
+
+[node name="SolidMeteor12" parent="Layer3" unique_id=1950267732 instance=ExtResource("4_2r41h")]
+position = Vector2(407, -600)
+scale = Vector2(0.5, 0.5)
+
+[node name="SolidMeteor9" parent="Layer3" unique_id=879059972 instance=ExtResource("4_2r41h")]
+position = Vector2(72, -1672)
+scale = Vector2(0.5, 0.5)
+
+[node name="SolidMeteor4" parent="Layer3" unique_id=1049515893 instance=ExtResource("4_2r41h")]
+position = Vector2(-368, -760)
+scale = Vector2(0.5, 0.5)
+
+[node name="SolidMeteor5" parent="Layer3" unique_id=1772561729 instance=ExtResource("4_2r41h")]
+position = Vector2(-176, -960)
+
+[node name="SolidMeteor6" parent="Layer3" unique_id=635000062 instance=ExtResource("4_2r41h")]
+position = Vector2(128, -1024)
+
+[node name="SolidMeteor10" parent="Layer3" unique_id=922434069 instance=ExtResource("4_2r41h")]
+position = Vector2(296, -1528)
+
+[node name="SolidMeteor11" parent="Layer3" unique_id=1694568896 instance=ExtResource("4_2r41h")]
+position = Vector2(-512, -520)
+
+[node name="Layer4" parent="." unique_id=593967322 instance=ExtResource("2_mx8sn")]
+modulate = Color(0.8645314, 0, 0.2061562, 1)
+position = Vector2(152, -1408)
+
+[node name="block" parent="Layer4" unique_id=1128845703 instance=ExtResource("4_xv074")]
+position = Vector2(248, -400)
+
+[node name="block2" parent="Layer4" unique_id=1225441467 instance=ExtResource("4_xv074")]
+position = Vector2(-200, -624)
+
+[node name="block3" parent="Layer4" unique_id=1727704538 instance=ExtResource("4_xv074")]
+position = Vector2(608, -736)
+
+[node name="block9" parent="Layer4" unique_id=1656828152 instance=ExtResource("4_xv074")]
+position = Vector2(304, -888)
+
+[node name="block4" parent="Layer4" unique_id=909642305 instance=ExtResource("4_xv074")]
+position = Vector2(288, -1056)
+scale = Vector2(1.5, 1.5)
+
+[node name="block5" parent="Layer4" unique_id=52045242 instance=ExtResource("4_xv074")]
+position = Vector2(-328, -1455.9999)
+scale = Vector2(2.2, 2.2)
+
+[node name="block6" parent="Layer4" unique_id=1202391187 instance=ExtResource("4_xv074")]
+position = Vector2(-352, -1056)
+scale = Vector2(2, 2)
+
+[node name="block7" parent="Layer4" unique_id=938071122 instance=ExtResource("4_xv074")]
+position = Vector2(-664, -904)
+scale = Vector2(3, 3)
+
+[node name="block8" parent="Layer4" unique_id=2110387129 instance=ExtResource("4_xv074")]
+position = Vector2(480, -928)
+scale = Vector2(2, 2)
+
+[node name="block10" parent="Layer4" unique_id=1487538284 instance=ExtResource("4_xv074")]
+position = Vector2(-480, -304)
+scale = Vector2(2.5, 2.5)
+
+[node name="Layer5" type="Node2D" parent="." unique_id=344719032]
+modulate = Color(0.42352942, 1, 1, 1)
+
+[node name="Blackhole" parent="Layer5" unique_id=1440219102 instance=ExtResource("5_sytrn")]
+position = Vector2(-208, -3192)
+
+[node name="Blackhole2" parent="Layer5" unique_id=1522288587 instance=ExtResource("5_sytrn")]
+position = Vector2(-440, -2640)
+
+[node name="Blackhole4" parent="Layer5" unique_id=1165563262 instance=ExtResource("5_sytrn")]
+position = Vector2(-48, -1560)
+
+[node name="Blackhole5" parent="Layer5" unique_id=179102540 instance=ExtResource("5_sytrn")]
+position = Vector2(672, -1168)
+
+[node name="Blackhole6" parent="Layer5" unique_id=569183232 instance=ExtResource("5_sytrn")]
+position = Vector2(-584, -1248)
+
+[node name="Blackhole3" parent="Layer5" unique_id=33926791 instance=ExtResource("5_sytrn")]
+position = Vector2(832, -2536)
+
 [node name="Player" parent="." unique_id=562159398 instance=ExtResource("2_w8frs")]
 
 [node name="Camera2D" parent="." unique_id=1170865184 node_paths=PackedStringArray("player") instance=ExtResource("4_mx8sn")]
@@ -70,17 +218,18 @@ offset = Vector2(0, -240)
 player = NodePath("../Player")
 
 [node name="Borders" type="Node2D" parent="." unique_id=639548502]
+script = ExtResource("6_wcngd")
 
 [node name="LeftBorder" type="StaticBody2D" parent="Borders" unique_id=856365432]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/LeftBorder" unique_id=1615585664]
-position = Vector2(-704, -1281)
+position = Vector2(-900, -300)
 shape = SubResource("RectangleShape2D_2r41h")
 
 [node name="LeftBorder2" type="StaticBody2D" parent="Borders" unique_id=8497510]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/LeftBorder2" unique_id=1755091501]
-position = Vector2(704, -1290)
+position = Vector2(900, -300)
 shape = SubResource("RectangleShape2D_2r41h")
 
 [node name="GameOverlay" type="CanvasLayer" parent="." unique_id=143451477]
@@ -98,7 +247,7 @@ offset_top = 128.0
 offset_right = 960.0
 offset_bottom = 297.0
 theme_override_font_sizes/font_size = 60
-text = "Earth Level
+text = "Cosmic Phobia
 "
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -122,3 +271,4 @@ text = "Quit"
 
 [editable path="Background"]
 [editable path="Layer1"]
+[editable path="Layer3"]

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bjgevyjq3cifm"]
+
+[ext_resource type="Script" uid="uid://catrxbtvrs1cq" path="res://scenes/Foreground/Obstacles/block.gd" id="1_nk8vj"]
+[ext_resource type="Texture2D" uid="uid://c3hxhxrw25cc6" path="res://SpaceShooterSprites/PNG/Obstacles/block1.png" id="2_pwoxv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_als3r"]
+size = Vector2(64, 64)
+
+[node name="block" type="StaticBody2D" unique_id=1672443626]
+script = ExtResource("1_nk8vj")
+metadata/_custom_type_script = "uid://cs6rrldljlsr3"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=112267024]
+texture = ExtResource("2_pwoxv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=142486259]
+shape = SubResource("RectangleShape2D_als3r")
