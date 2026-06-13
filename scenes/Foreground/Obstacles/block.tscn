@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bjgevyjq3cifm"]
 
-[ext_resource type="Script" uid="uid://catrxbtvrs1cq" path="res://scenes/Foreground/Obstacles/block.gd" id="1_nk8vj"]
+[ext_resource type="Script" uid="uid://catrxbtvrs1cq" path="res://scripts/Foreground/Obstacles/block.gd" id="1_nk8vj"]
 [ext_resource type="Texture2D" uid="uid://c3hxhxrw25cc6" path="res://SpaceShooterSprites/PNG/Obstacles/block1.png" id="2_pwoxv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_als3r"]

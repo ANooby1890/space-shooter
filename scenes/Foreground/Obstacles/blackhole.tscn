@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://iss3d0cddvd2"]
 
 [ext_resource type="Script" uid="uid://dgwjjvf5qi2ki" path="res://scripts/Foreground/Obstacles/spinning_obstacle.gd" id="1_78ve5"]
-[ext_resource type="Texture2D" uid="uid://dmdhx0tm4svik" path="res://SpaceShooterSprites/PNG/Obstacles/blackhole1.png" id="2_pwp2a"]
+[ext_resource type="Texture2D" uid="uid://l3in0kbexlhb" path="res://SpaceShooterSprites/PNG/Obstacles/Blackhole1/blackhole1-1.png" id="2_wjxmx"]
+[ext_resource type="Texture2D" uid="uid://f6smfet20him" path="res://SpaceShooterSprites/PNG/Obstacles/Blackhole1/blackhole1-2.png" id="3_lottf"]
+[ext_resource type="Texture2D" uid="uid://c78mveajhcm8x" path="res://SpaceShooterSprites/PNG/Obstacles/Blackhole1/blackhole1-3.png" id="4_eg6bj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_r8fna"]
 radius = 108.04166
@@ -11,8 +13,16 @@ script = ExtResource("1_78ve5")
 rotation_speed = 30
 metadata/_custom_type_script = "uid://dgwjjvf5qi2ki"
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=276152179]
-texture = ExtResource("2_pwp2a")
+[node name="BlackholeSprite" type="Sprite2D" parent="." unique_id=276152179]
+
+[node name="Hole" type="Sprite2D" parent="BlackholeSprite" unique_id=1431476480]
+texture = ExtResource("2_wjxmx")
+
+[node name="OuterRing" type="Sprite2D" parent="BlackholeSprite" unique_id=2136576275]
+texture = ExtResource("4_eg6bj")
+
+[node name="Ring" type="Sprite2D" parent="BlackholeSprite" unique_id=1760835427]
+texture = ExtResource("3_lottf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=34475592]
 position = Vector2(-4, -9)

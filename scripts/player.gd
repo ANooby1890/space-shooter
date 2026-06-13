@@ -22,22 +22,22 @@ func _physics_process(delta: float) -> void:
 		move_and_slide()
 
 		# Handle visual sprite rotation based on direction, not hardcoded keys ---
-		if direction > 0 and $PlayerImage.rotation < 0.2:
+		if direction > 0 and $PlayerSprite.rotation < 0.2:
 			# Moving Right
-			$PlayerImage.rotation += 1 * delta
-		elif direction < 0 and $PlayerImage.rotation > -0.2:
+			$PlayerSprite.rotation += 1 * delta
+		elif direction < 0 and $PlayerSprite.rotation > -0.2:
 			# Moving Left
-			$PlayerImage.rotation -= 1 * delta
+			$PlayerSprite.rotation -= 1 * delta
 		elif direction == 0:
 			# No horizontal input: Return to center
-			if $PlayerImage.rotation < 0:
-				$PlayerImage.rotation += 1 * delta
+			if $PlayerSprite.rotation < 0:
+				$PlayerSprite.rotation += 1 * delta
 				# Prevent overshooting past 0
-				if $PlayerImage.rotation > 0: $PlayerImage.rotation = 0
-			elif $PlayerImage.rotation > 0:
-				$PlayerImage.rotation -= 1 * delta
+				if $PlayerSprite.rotation > 0: $PlayerSprite.rotation = 0
+			elif $PlayerSprite.rotation > 0:
+				$PlayerSprite.rotation -= 1 * delta
 				# Prevent overshooting past 0
-				if $PlayerImage.rotation < 0: $PlayerImage.rotation = 0
+				if $PlayerSprite.rotation < 0: $PlayerSprite.rotation = 0
 				
 		# Old move_and_collide check replaced with Godot's slide collision check
 		if get_slide_collision_count() > 0 and not godmode:

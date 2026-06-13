@@ -1,9 +1,4 @@
-res://scenes/Foreground/Obstacles/meteor.tscn
-res://scripts/Foreground/Obstacles/spinning_obstacle.gd
-res://scenes/rooms/main_menu.tscn
-res://scenes/Foreground/Obstacles/block.gd
-res://scripts/Foreground/Obstacles/meteor.gd
-res://scenes/Background/background.tscn
-res://scenes/Foreground/Obstacles/blackhole.tscn
-res://scenes/level/level.tscn
 res://scenes/player.tscn
+res://scenes/level/level.tscn
+res://scenes/Foreground/Obstacles/blackhole.tscn
+res://scripts/player.gd
